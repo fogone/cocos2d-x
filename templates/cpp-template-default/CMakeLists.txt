@@ -100,10 +100,12 @@ set(PLATFORM_SPECIFIC_SRC
 elseif ( WIN32 )
 set(PLATFORM_SPECIFIC_SRC
   proj.win32/main.cpp
+  ${COCOS2D_ROOT}/external/tinyxml2/tinyxml2.h
 )
 set(PLATFORM_SPECIFIC_HEADERS
   proj.win32/main.h
   proj.win32/resource.h
+  ${COCOS2D_ROOT}/external/tinyxml2/tinyxml2.cpp
 )
 endif()
 
